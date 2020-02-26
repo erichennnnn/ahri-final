@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Choose Your Champion</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css">
 
     <!-- import the webpage's javascript file -->
-    <script src="/java.js" defer></script>
+    <script src="java.js" defer></script>
 </head>
 
 <body>
@@ -18,30 +21,99 @@
     <div class="topnav">
 
         <!-- Navigation bar -->
-        <a href="#logo" class="active">Logo</a>
+
+        <img class="active" src="Images/riot-fist-container-white-black%20copy.png" height="40px" width="72px">
+        <a href="/index.html"><img class="lol" src="Images/lol-logo-rendered-hi-res.png" height="58px" width="89px"></a>
+
 
         <!-- 'hidden' menu-->
+
         <div id="myLinks">
             <a href="#login">LOGIN</a>
-            <a href="#home">HOME</a>
+            <a href="/index.html">HOME</a>
             <a href="#game">GAME</a>
-            <a href="#champions">CHAMPIONS</a>
-            <a href="#news">News</a>
+            <a href="/info.html">CHAMPIONS</a>
+            <a href="#news">NEWS</a>
         </div>
 
         <!-- 'hidden' menu trigger-->
+
         <a class="icon" onclick="myFunction()">
-            <img src="https://cdn.glitch.com/36a0c12c-e227-4265-af26-734c4c458206%2Fmenu-24px.svg">
+            <img src="images/menu-alt-512-white.png" width="20px" height="20px">
         </a>
     </div>
 
+
+
+    <!-- choose your champion   -->
     <div class="info">
         <div class="info-body">
+            <div class="info-head">
+                Choose Your
+            </div>
+
+            <div class="info-subhead">
+                Champion
+            </div>
+
+            <div class="info-text">
+                <p>With more than 140 champions, you’ll find the perfect match for your play-style.<br>
+                    Master one, or master them all.</p>
+            </div>
+
+        </div>
+
+        <!--option bar -->
+        <div class="info-option">
+            <img class="search" src="Images/102634-200.png">
+            <div class="roles"><button onclick="rollDropdown()" class="dropbtn">ALL ROLES
+                    <i class="roles-button fas fa-sort-down"></i>
+                </button></div>
+
+            <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                <a class="roll-dropdown" href="#ASSASSINS">ASSASSINS</a>
+
+                <a class="roll-dropdown" href="#base">FIGHTERS</a>
+
+                <a class="roll-dropdown" href="#blog">MAGES</a>
+
+                <a class="roll-dropdown" href="#contact">MARKSMEN</a>
+                <a class="roll-dropdown" href="#custom">SUPPORT</a>
+                <a class="roll-dropdown" href="#support">TANKS</a>
+            </div>
+            <div class="option"> ALL DIFFICULTIES</div>
 
         </div>
 
 
+        <div class="info-images">
+            <img class="champion-img" src="Images/RiotX_ChampionList_aatrox.jpg" alt="aatrox">
+            <a href="/Ahri.html">
+                <img class="champion-img-1" src="Images/RiotX_ChampionList_ahri.jpg" alt="ahri">
+            </a>
+            <img class="champion-img-2" src="Images/RiotX_ChampionList_akali.jpg" alt="akali">
+            <img class="champion-img-3" src="Images/RiotX_ChampionList_alistar-01.jpg" alt="alistar">
+            <img class="champion-img-4" src="Images/RiotX_ChampionList_amumu.jpg" alt="alistar">
+            <img class="champion-img-5" src="Images/RiotX_ChampionList_annie.jpg" alt="alistar">
+            <img class="champion-img-6" src="Images/RiotX_ChampionList_anivia.jpg" alt="alistar">
+            <img class="champion-img-7" src="Images/Aphelios-01.jpg" alt="alistar">
 
+
+        </div>
+
+        <img class="info-riot" src="Images/footer.png">
+
+        <div class="info-footer">
+            <img src="Images/389px-ESRB_2013_Teen.svg.png" alt="ESRB_2013_Teen" width="86px" height="116px">
+            <div class="footer-list">
+                <ul>Blood</ul>
+                <ul> Fantasy Violence</ul>
+                <ul>Mild Suggestive Themes</ul>
+                <ul>Use of Alcohol and Tobacco</ul>
+                <ul> Online Interactions Not Rated by the ESRB</ul>
+            </div>
+        </div>
 
     </div>
 
